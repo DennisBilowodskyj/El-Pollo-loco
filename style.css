@@ -3,6 +3,11 @@
   src: url('fonts/Cast\ Iron.ttf') format('truetype');
 }
 
+:not(:root):fullscreen::backdrop {
+  
+  background: rgba(0, 0, 0, 0);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -78,6 +83,10 @@ canvas {
   width: 850px;
   height: 480px;
   display: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .endGame {
